@@ -1,0 +1,59 @@
+:root{
+    --red: #E50914;
+    --black: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .brand{
+    color: var(--red);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff
+}
+
+.main-film{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0.50),rgba(0,0,0,0.50)10%), url('../img/capa.png');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-film .description{
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 45px;
+}
