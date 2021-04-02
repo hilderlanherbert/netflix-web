@@ -11,28 +11,50 @@
 
 body{
     background: var(--black);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
+}
+
+header{
+    height: 9vh;
 }
 
 header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    font-size: 18px;
+    background-color: black;
+    margin-left: 60px;
+}
+
+header .search-bar{
+ 
+    position: relative;
+    left: 75vw;
+    bottom: 50px;
+}
+
+header .search-bar a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 18px;
+    font-size: 16px;
+}
+
+header .search-bar a i{
+    font-size: 25px;
 }
 
 header .brand{
-    color: var(--red);
-    font-family: 'Arial Black';
-    font-size: 40px;
-    margin-right: 5px;
+    height: 75px;
 }
 
 header nav a{
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    color: white;
+    margin-left: 25px;
 }
 
 header nav a:hover{
@@ -40,20 +62,79 @@ header nav a:hover{
 }
 
 .main-film{
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0.50),rgba(0,0,0,0.50)10%), url('../img/capa.png');
-    height: 400px;
+    background: linear-gradient(rgba(0,0,0.1),rgba(0,0,0,0.1)5%), url('../img/capa.png');
+    height: 80vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 45px;
 }
 
 .main-film .description{
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.title{
-    font-size: 45px;
+.button-play{
+    background-color: white;
+    border-radius: 5px;
+    height: 55px;
+    border: none;
+    color: black;
+
+    padding: 15px 40px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button-info{
+    background-color: rgba(92, 87, 87, 0.438);
+    border-radius: 5px;
+    height: 55px;
+    border: none;
+    color: white;
+
+    padding: 15px 40px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+/* .button-play:hover{
+    background-color: rgba(0, 0, 0);
+    color: white;
+} */
+
+button i {
+    padding-right: 15px;
+}
+
+.main-film .container{
+    width: 60%;
+}
+
+.box-film{
+    height: 180px;
+    display: block;
+    border-radius: 8px;
+}
+
+.carousel{
+    margin-left: 45px
+}
+
+.item{
+    
 }
